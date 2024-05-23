@@ -4,13 +4,11 @@ package BasePackage;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Collection;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions( 
-		features="src/test/resources/features",
+		features="src/test/resources/features/HW_Onboarding.feature",
 		glue={"StepDefinition","Hooks"}, 
 		plugin= {"pretty","html:target/CucumberReport.html",
 				"junit:target/CucumberReport.xml",

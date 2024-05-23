@@ -14,7 +14,7 @@ public class BaseLoginPage {
 
  
 	@Given("user is in the login page")
-	public void user_is_in_the_login_page() throws InterruptedException {
+	public static void user_is_in_the_login_page() throws InterruptedException {
 	  
 	   System.setProperty("WebDriver.chrome.driver","C:\\chromedriver_win32");
 	  driver=new ChromeDriver();
